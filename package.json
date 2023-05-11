@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio01",
+  "version": "1.0.0",
+  "description": "Ejercicio01 de prueba en OpenBootCamp",
+  "main": "index.js",
+  "scripts": {
+    "saludar": "node prueba1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francisco Cansino",
+  "license": "ISC"
+}
