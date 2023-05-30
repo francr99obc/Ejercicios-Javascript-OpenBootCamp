@@ -1,32 +1,10 @@
-const logger = require('./logger')
+import * as controller from './controller'
+import chalk from "chalk"
+const sum= controller.suma(100,200)
+console.log(sum);
 
-// logger.log("Hola estoy saliendo por pantalla")
-logger.info("Hola esto es un mensaje informativo")
-logger.debug("Esto es un mensaje de debug")
-logger.warn("Esto es un mensaje de advertencia")
-logger.error("Esto es un error")
+const mult= controller.multiplica(20,50);
+console.log(chalk.green(mult));
 
-
-
-
-// 
-const winston = require("winston");
-
-const logger = winston.createLogger({
-  level: "error",
-  format: winston.format.json(),
-  defaultMeta: { service: "user-service" },
-  transports: [
-    new winston.transports.File({ filename: "error.log", level: "error" }),
-  ],
-});
-
-function showError() {
-  throw new Error("showError function");
-}
-
-try {
-  showError();
-} catch (e) {
-  logger.log("error", e.toString());
-}
+// Forma simplificada de hacer el ejercicio
+console.log(chalk.green(multiplica(suma(1, 2), suma(4, 5))))

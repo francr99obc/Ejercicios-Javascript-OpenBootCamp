@@ -1,12 +1,16 @@
 {
-  "name": "ejercicio01",
+  "name": "ejercicio10",
   "version": "1.0.0",
-  "description": "Ejercicio01 de prueba en OpenBootCamp",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "saludar": "node prueba1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Francisco Cansino",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
 }
